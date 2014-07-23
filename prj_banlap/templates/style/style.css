@@ -1,0 +1,806 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0 auto;
+    width: 1000px;
+}
+div#top{
+    width: 1000px;
+    margin: 0px auto;
+    padding: 5px auto;
+    height:30px;
+    background: black;
+    
+}
+div#top_info{
+    width: 1000px;
+    height: 120px;
+    margin: 0 auto;
+    clear: left;
+}
+div#top_menu{
+    width: 1000px;
+    margin: 0 auto;
+    background: red;
+    clear: left;
+}
+div#banner_news{
+    width: 1000px;
+    margin: 0 auto;
+    background: deepskyblue;
+    clear: left;
+    z-index: 100;
+}
+div#saleoff{
+    width: 1000px;
+    margin: 0px auto;
+    clear: both;
+    padding-top: 10px;
+}
+div#info{
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+div#product{
+    width: 800px;
+    float: left;
+}
+
+div#product .sp{
+    width: 154px;
+    float: left;
+    margin: 3px;
+    padding-bottom: 50px;
+}
+div#product .sp:hover{
+    box-shadow: 0px 0px 5px #888888;
+}
+div#product .sp div.hinh{
+    width: 100%;
+    float: left;
+    text-align: center;
+    font: 12px serif;
+}
+div#product .sp div.ten{
+    width: 100%;
+    float: left;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+div#product .sp div.gia{
+    width: 100%;
+    float: left;
+    text-align: center;
+    color: red;
+}
+div#product .sp .hinh img{
+    width: 100px;
+    height: 100px;
+}
+div#ads{
+    width: 200px;
+    float: left;
+}
+div#ads h3{
+    font: bold 16px verdana;
+    text-decoration: underline;
+    padding-left: 10px;
+}
+div#footer{
+    width: 1000px;
+    margin: 0 auto;
+    clear: left;
+    padding-top: 10px;
+}
+div#thethanhvien{
+    width: 500px;
+    float: left;
+}
+div#lienket{
+    width: 500px;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+div#thethanhvien label{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+    line-height: 13px;
+}
+div#thethanhvien input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+div#lienket a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+div#top_link{
+    height: 30px;
+    line-height: 30px;
+    width: 200px;
+    float: left;
+}
+div#top_hinh{
+    width: 300px;
+    float: left;
+}
+div#top_hinh img{
+    margin: auto 0px auto 25px;
+}
+div#top_hinh #gach{
+    border-left: 1px dotted white;
+    float: left;
+    width: 1px;
+}
+div#logo{
+    width: 450px;
+    float: left;
+}
+div#another{
+    width: 550px;
+    float: left;
+}
+div#logo img{
+    width: 100px;
+    height: 100px;
+    margin: 20px auto 3px 40px;
+}
+div#sdt_search{
+    width: 300px;
+    float: left;
+}
+div#tk_giohang{
+    width: 150px;
+    float: left;
+}
+div#sdt{
+    width: 300px;
+    height: 50px;
+    font: bold 23px sans-serif;
+}
+div#search{
+    width: 300px;
+    height: 50px;
+}
+div#sdt img{
+    margin: 10px auto 5px 10px;
+    width: 40px;
+    height: 40px;
+}
+div#search input{
+    margin: 20px auto 10px 15px;
+}
+div#taikhoan{
+    width: 150px;
+    height:50px;
+}
+div#giohang{
+    width: 150px;
+    height:50px;
+}
+div.tk{
+    color: #afa3a3;
+    font-size: 15px;
+    line-height: 15px;
+    margin: 10px;
+    z-index: 10;
+    position: relative;
+}
+div#tk_giohang1{
+    color: #afa3a3;
+    font-size: 15px;
+    line-height: 15px;
+    margin: 10px;
+    z-index: 10;
+    position: relative;
+}
+div.tk:hover{
+    border: 1px solid #afa3a3;
+}
+/*div.tk:hover #showtk{
+    display: block;
+    left: -100%;
+    background: red;
+}*/
+/* div tai khoan*/
+div.tk #showtk{
+    z-index: 0;
+    position: absolute;
+    display: none;
+    border: 1px solid #CCCCCC;
+    width: 250px;
+    background: white;
+}
+div.tk #showtk .tk_del{
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+div.tk #showtk .tk_del:hover{
+    background: #E9E9E9;
+}
+div.tk #showtk .tk_del a{
+    text-decoration: none;
+    color: black;
+    padding-left: 25px;
+}
+div.tk #showtk #theodoidonhang{
+    border-top: 1px dotted gray;
+    border-bottom: 1px dotted gray;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+div.tk #showtk #theodoidonhang p{
+    padding-left: 25px;
+    padding-bottom: 5px;
+}
+div.tk #showtk #theodoidonhang input{
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+div.tk #showtk #dangnhap_dangky{
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+}
+div.tk #showtk #dangnhap_dangky a{
+    text-decoration: none;
+    color: black;
+    margin-left: 25px;
+}
+div.tk #showtk #dangnhap_dangky a:hover{
+    color: gray;
+}
+/*form đăng nhập*/
+div.tk #showtk #dangnhap_dangky div#form_dangnhap{
+    position: absolute;
+    width: 320px;
+    height: 360px;
+    top: -50px;
+    left: -420px;
+    background: white;
+    display: none;
+    box-shadow: 0px 0px 10px gray;
+}
+div.tk #showtk #dangnhap_dangky div#form_dangnhap div#tit_dn{
+    width: 295px;
+    height: 40px;
+    background: #888888;
+    font: bold 16px verdana;
+    color: white;
+    line-height: 40px;
+    padding-left: 25px;
+}
+div.tk #showtk #dangnhap_dangky div#form_dangnhap div#frm_dn{
+    border-bottom: 1px solid gray;
+    height: 250px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+div.tk #showtk #dangnhap_dangky div#form_dangnhap div#loi{
+    width: 100px;
+    margin: 10px 10px 10px 20px;
+    font: italic 13px verdana;
+}
+div.tk #showtk #dangnhap_dangky div#form_dangnhap div#frm_dn .tieude_dn{
+    width: 120px;
+    margin-top: 25px;
+    font: bold 13px verdana;
+}
+div.tk #showtk #dangnhap_dangky div#form_dangnhap div#frm_dn .tieude_dn span.hoathi{
+    color: red;
+}
+div.tk #showtk #dangnhap_dangky div#form_dangnhap div#btm_dn{
+    margin: 10px auto 10px 20px;
+    width: 100%;
+}
+div.tk #showtk #dangnhap_dangky div#form_dangnhap div#btm_dn div#btm_dn1{
+    float: left;
+    width: 65%;
+}
+div.tk #showtk #dangnhap_dangky div#form_dangnhap div#btm_dn div#btm_dn2{
+    float: left;
+    width: 30%;
+}
+div.tk #showtk #dangnhap_dangky div#form_dangnhap div#btm_dn div#btm_dn2 button{
+    border: 1px solid white;
+    background: #cdc8c8;
+    padding: 5px;
+    
+}
+div.tk #showtk #dangnhap_dangky div#form_dangnhap div#btm_dn div#btm_dn2 button:hover{
+    background: #BCBEC3;
+}
+/*form loi dang nhap*/
+div.tk #showtk #dangnhap_dangky div#loidn{
+    position: absolute;
+    width: 280px;
+    height: 50px;
+    top: 315px;
+    left: -420px;
+    background: white;
+    box-shadow: 0px 0px 10px gray;
+    font: italic 14px verdana;
+    color: red;
+    padding: 20px;
+    line-height: 25px;
+    display: none;
+}
+div#top_menu ul{
+    display: inline;
+}
+div#top_menu ul li{
+    list-style-type: none;
+    width: 200px;
+    float: left;
+    position: relative;
+}
+div#top_menu ul li a:hover{
+    color: red;
+    font: bold 16px verdana;
+}
+div#top_menu ul li a{
+    text-decoration: none;
+    color: blue;
+    font: bold 16px serif;
+}
+div#top_menu ul li ul{
+    position: absolute;
+    width: 200px;
+    border: 1px solid gray;
+    display: none;
+    background: white;
+    padding: 15px 20px 15px 30px;
+    z-index: 0;
+}
+div#top_menu ul li ul li a{
+    color: black;
+    font: 14px verdana;
+}
+div#top_menu ul li ul li a:hover{
+    color: deepskyblue;
+    background: white;
+    
+}
+div#top_menu ul li:hover ul{
+    display: block;
+}
+div#banner_news #banner{
+    width: 700px;
+    float: left;
+}
+div#banner_news #news{
+    width: 300px;
+    float: right;
+}
+div.saleoff1{
+    width: 500px;
+    float: left;
+}
+div.saleoff1 img{
+    margin: 3px;
+    border: 1px solid black;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+div#footer_nav{
+    width: 1000px;
+    float:left;
+    background: #2F2E33;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+div#footer_nav ul{
+    display: inline;
+}
+div#footer_nav ul li{
+    list-style-type: none;
+    width: 110px;
+    float: left;
+    border-right: 1px solid white;
+}
+div#footer_nav ul li a{
+    text-decoration: none;
+    font: 13px serif;
+    color: white;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+}
+div#footer_info{
+    width: 1000px;
+}
+div#info_left{
+    width: 269px;
+    float: left;
+    background: #2F2E33;
+    color: white;
+    font: 13px serif;
+    padding: 15px;
+    border-right: 1px dotted white;
+    height: 150px;
+}
+div#info_mid{
+    width: 319px;
+    float: left;
+    background: #2F2E33;
+    color: white;
+    font: 13px serif;
+    padding: 15px;
+    border-right: 1px dotted white;
+    height: 150px;
+}
+div#info_right{
+    width: 320px;
+    float: left;
+    background: #2F2E33;
+    color: white;
+    font: 13px serif;
+    padding: 15px;
+    height: 150px;
+}
+div#info_right img{
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+div#footer_info h3{
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+div.tintuc div.cls{
+    clear: left;
+}
+div.tintuc{
+    height: 90px;
+    border-top: 1px solid #C3C3C3;
+    padding: 3px;
+}
+div.tintuc a{
+    text-decoration: none;
+    color: black;
+}
+div.tintuc a:hover{
+    color: #86A076;
+}
+div.tintuc .chu_tt{
+    width: 190px;
+    text-align: justify;
+    float: left;
+    padding: 5px;
+}
+div.tintuc .hinh_tt{
+    width: 90px;
+    float: left;
+    padding: 2px;
+    
+}
+/*form ho tro khach hang*/
+div#product h3{
+    font: bold 16px verdana;
+    text-decoration: underline;
+    padding-left: 10px;
+}
+div#product h4{
+    color: red;
+    text-align: center;
+    font: bold 16px verdana;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+div#product label{
+    width: 120px;
+    float: left;
+    padding-left: 50px;
+    font: bold 14px verdana;
+    color: deepskyblue;
+}
+#info div#product p{
+    font: 14px verdana;
+    color: black;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+/*form tuyen dung*/
+div#product ul.tuyendung{
+    padding-left: 100px;
+    text-align: justify;
+}
+#product h5{
+    font: 16px serif;
+    text-align: justify;
+    padding-bottom: 10px;
+}
+/*form lien he*/
+div#product form#lienhe input, textarea{
+    margin: 10px;
+}
+div#product form#lienhe label{
+    font: bold 14px verdana;
+    color: black;
+}
+div#product form#lienhe label span.hoa{
+    color: red;
+}
+div#product form#lienhe button{
+    padding: 10px;
+    color: black;
+    background: #CCCCCC;
+    border: 1px solid white;
+}
+div#product form#lienhe button:hover{
+    background: #BCBEC3;
+}
+div#product form#lienhe #gc{
+    padding-left: 235px;
+    color: #CCCCCC;
+}
+/*form đăng ký*/
+#info #product label{
+    width: 200px;
+    float: left;
+    padding-left: 25px;
+    padding-top: 10px;
+    color: black;
+    font: bold 14px sans-serif;
+}
+#info #product input{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#info #product button{
+    border: 1px solid white;
+    background: #F8F8F8;
+    padding: 10px;
+}
+#info #product button:hover{
+    background: #BCBEC3;
+}
+#info #product p{
+    padding-left: 220px;
+    font: 12px sans-serif;
+    color: #BCBEC3;
+    
+}
+#info #product span{
+    color: red;
+}
+#info #product #loi{
+    padding-left: 25px;
+    padding-top: 10px;
+    font: italic 13px verdana;
+    line-height: 50px;
+    color: red;
+}
+/*chi tiet san pham*/
+#info #product #pro_details{
+    width: 800px;
+    margin-top: 20px;
+}
+#info #product #pro_details #top_pro_details{
+    width: 100%;
+    float: left;
+}
+#info #product #pro_details #info_pro_details{
+    width: 100%;
+    float: left;
+    clear: left;
+}
+#info #product #pro_details #top_pro_details #hinh{
+    width: 240px;
+    margin: 10px 0px 10px 10px;
+    float: left;
+}
+#info #product #pro_details #top_pro_details #hinh img{
+    width: 240px;
+    height: 240px;
+}
+#info #product #pro_details #top_pro_details #more_info{
+    width: 550px;
+    float: left;
+}
+#info #product #pro_details #top_pro_details #more_info #tentt{
+    width: 530px;
+    margin: 10px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid gray;
+    
+}
+#info #product #pro_details #top_pro_details #more_info #tentt h3{
+    font: bold 16px verdana;
+    text-decoration: none;
+    margin-left: -10px;
+}
+#info #product #pro_details #top_pro_details #more_info #solieu{
+    width: 530px;
+    margin: 10px;
+    color: deepskyblue;
+}
+#info #product #pro_details #top_pro_details #more_info #solieu span.sth{
+    color: black;
+    width: 110px;
+    float: left;
+}
+#info #product #pro_details #top_pro_details #more_info #solieu button{
+    float: left;
+    clear: left;
+}
+#info #product #pro_details #info_pro_details #hienthi{
+    width: 800px;
+    margin: 10px;
+}
+#info #product #pro_details #info_pro_details #hienthi ul{
+    list-style-type: none;
+}
+#info #product #pro_details #info_pro_details #hienthi ul li a{
+    display: inline;
+    width: 150px;
+    float: left;
+    font: 13px verdana;
+    text-align: center;
+    color: white;
+    background: blue;
+    text-decoration: none;
+    padding: 15px;
+    border-right: 3px solid white;
+}
+/*chi tiet hien thi*/
+#info #product #pro_details #info_pro_details #chitiet1{
+    width: 780px;
+    clear: left;
+    padding: 20px 10px;
+    text-align: justify;
+}
+#info #product #pro_details #info_pro_details #chitiet2{
+    width: 780px;
+    clear: left;
+    padding: 20px 10px;
+    text-align: justify;
+    display: none;
+}
+#info #product #pro_details #info_pro_details #chitiet3{
+    width: 780px;
+    clear: left;
+    padding: 20px 10px;
+    text-align: justify;
+    display: none;
+}
+#info #product #pro_details #info_pro_details #chitiet4{
+    width: 780px;
+    clear: left;
+    padding: 20px 10px;
+    text-align: justify;
+    display: none;
+}
+.display{
+    display: block;
+}
+/*gio hang*/
+#product #cart{
+    width: 790px;
+    padding-left: 10px;
+}
+#cart .tinhtien{
+    width: 100%;
+    height: 150px;
+    clear: left;
+}
+#cart #cart_info{
+    width: 100%;
+}
+#cart #cart_info .sanpham{
+    width: 300px;
+    float: left;
+    border-bottom: 1px solid #CCCCCC;
+    height: 200px;
+}
+#cart #cart_info .dongia{
+    width: 200px;
+    float: left;
+    border-bottom: 1px solid #CCCCCC;  
+    height: 120px;
+    padding-top: 80px;
+}
+#cart #cart_info .soluong{
+    width: 100px;
+    float: left;
+    border-bottom: 1px solid #CCCCCC;
+    height: 120px;
+    padding-top: 80px;
+}
+#cart #cart_info .thanhtien{
+    width: 190px;
+    float: left;
+    border-bottom: 1px solid #CCCCCC;
+    height: 120px;
+    padding-top: 80px;
+}
+#cart #cart_info .sanpham img{
+    margin-left: 60px;
+}
+#cart #cart_info .sanpham .tensp a{
+    width: 100%;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+#cart #cart_info .sanpham_tit{
+    margin-left: 10px;
+    width: 290px;
+    float: left;
+    border-bottom: 1px solid #CCCCCC;
+    font-weight: bold;
+
+}
+#cart #cart_info .dongia_tit{
+    width: 200px;
+    float: left;
+    border-bottom: 1px solid #CCCCCC;  
+    font-weight: bold;
+}
+#cart #cart_info .soluong_tit{
+    width: 100px;
+    float: left;
+    border-bottom: 1px solid #CCCCCC;
+    font-weight: bold;
+}
+#cart #cart_info .thanhtien_tit{
+    width: 190px;
+    float: left;
+    border-bottom: 1px solid #CCCCCC;
+    font-weight: bold;
+}
+/*top n bottom tinhtien*/
+#cart .tinhtien .tieptucmua{
+    margin-left: 10px;
+    width: 290px;
+    float: left;
+    border-bottom: 1px solid #CCCCCC;
+    font-weight: bold;
+}
+#cart .tinhtien .tieptucmua button{
+    margin: 40px 10px;
+}
+#cart .tinhtien .tieptucmua a{
+    margin: 50px auto 70px 0px;
+    text-decoration: none;
+    color: blue;
+    font: 14px verdana;
+}
+#cart .tinhtien .ttlai{
+    width: 200px;
+    float: left;
+    border-bottom: 1px solid #CCCCCC;  
+    font-weight: bold;
+}
+#cart .tinhtien .ttlai button{
+    margin: 40px 10px;
+}
+#cart .tinhtien .tttt{
+    width: 290px;
+    float: left;
+    border-bottom: 1px solid #CCCCCC;
+    font-weight: bold;
+}
+#cart .tinhtien .tttt button{
+    margin: 40px 10px;
+    color: white;
+    background: crimson!important;
+    font-weight: bold;
+}
+#cart .tinhtien .tttt button:hover{
+    background: #942B2B!important;
+}
